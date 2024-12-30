@@ -8,7 +8,7 @@ This web app was built as part of a masters project to compare the effect of cha
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Features](#features)
-4. [Configuration](#configuration)
+4. [References](#references)
 5. [Contact](#contact)
 
 ## Installation
@@ -37,13 +37,23 @@ Alternatively, after running the code you can copy the link http://127.0.0.1:223
 In the app you have the option of uploading the excel file downloaded from the Rheocompass software. 
 You can select multiple test samples of interest to be plotted on the app from the dropdown menu and adjust the color of each plot line.
 
-In this text box, you can choose the marker type for the each plot line, this useful to compare b
+In this text box, you can choose the marker type for the each plot line to distinguish between them.  
 ![image](https://github.com/user-attachments/assets/9c4af953-d82a-4d57-a60b-026420f43452)
 
+The other features include:
+1. Changing the font text and size for the axes and legend
+2. Adjusting the size of the markers
+3. Setting the range of frequency to plot by adjusting the maximum and minimum x values to plot
+4. Plotting interpolated lines using cubic regression. This method requires you to input the range of x values to enter for the regression. Care must be used to ensure that you choose the range of points which are not affected by low resolution limit of the rheometer at low frequency and inertia at high frequency. For guidance on choosing this range please refer to text **go to** [[1]](#1). These interpolated lines for the storage moduli and loss moduli will be useful to find values such as the $\omega_{G'=G''}$. You can also choose to plot these lines on the plot alongside the raw data for the storgae and loss moduli.
+5. After plotting, the table for the data will also be made visible for the user to see the raw data from the excel spreadsheet
+6. You can also lookup specific storage and loss moduli values from the table and have the values highlighted on the plot. 
+7. You can also choose to show gridlines on the plot and name each sample by adding a plot label to each line plotted. 
 
-
-## Configuration
-...
+## References
+<a id="1">[1]</a> 
+Ewoldt, R.H., Johnston, M.T., Caretta, L.M. (2015). 
+Experimental Challenges of Shear Rheology: How to Avoid Bad Data. https://doi.org/10.1007/978-1-4939-2065-5_6
 
 ## Contact
+If you have any queries about the code please email me at:
 Email: ssivakumar1@sheffield.ac.uk
